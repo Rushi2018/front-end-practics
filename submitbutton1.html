@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Practice</title>
+    <script src="submit.js" style="color: blue;">
+    </script>
+    <script src="anna.js"></script>
+    <style>
+        .name {
+            background-color: black;
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form style="background-color:blue; color: blanchedalmond;">
+        <fieldset>
+            <legend>Employee Details</legend>
+            <label>Name</label>
+            <input type="text" id="fname"> <br><br>
+            <hr>
+
+            <label>Address</label>
+            <input type="text" id="address"> <br> <br>
+            <hr>
+
+            <label>Email</label>
+            <input type="email" id="email"> <br><br>
+            <hr>
+
+            <label>Password</label>
+            <input type="password" id="password"> <br><br>
+            <hr>
+
+            <label>Birth Date</label>
+            <input type="date" id="birthdate"> <br><br>
+            <hr>
+        </fieldset>
+    </form>
+    <button type="submit" class="name" onclick="displaydata()">Submit</button>
+    <button class="name" onclick="alert('My Name Is Rushi')">click me</button>
+    <button class="name" onclick="alert('my past is very bad')">past of rushi</button>
+    <button class="name" onclick="alert('it will distroy you')">Don't Touch</button>
+    <button class="name" onclick="show()"> hj </button>
+    <button class="name" onclick="rushi()">Submit</button>
+    <button class="name" onclick="rd()">Family</button>
+    <button class="name" onclick="id1()">js button</button>
+    <button class="name" onclick="kd()">submit</button>
+    <button class="name" onclick="rushidivate()">RD</button>
+    <button onclick="rd()">RD</button>
+    <button onclick="alert('dada')">dada</button>
+
+    <p id="Name">name</p>
+    <p id="Address">add</p>
+    <p id="Email">email</p>
+    <p id="Password">password</p>
+    <p id="Date">date</p>
+
+</body>
+<script>
+    function rd() {
+        alert('rd full form is rushi divate')
+    }
+
+    function id1() {
+        alert('this is me rd')
+    }
+
+    function rd() {
+        alert('rd is rushi divate')
+    }
+
+    function rushi() {
+        alert('Information Submitted Sucessfully')
+    }
+
+    function show() {
+
+        alert("fggj")
+    }
+
+    function displaydata() {
+        var bala = document.getElementById("fname").value
+        var kala = document.getElementById("address").value
+        var baba = document.getElementById("email").value
+        var lala = document.getElementById("password").value
+        var dhaba = document.getElementById("birthdate").value
+
+        document.getElementById("Name").innerHTML = "Name " + bala
+        document.getElementById("Address").innerHTML = "Address " + kala
+        document.getElementById("Email").innerHTML = "Email " + baba
+        document.getElementById("Password").innerHTML = "Password " + lala
+        document.getElementById("Date").innerHTML = "Date " + dhaba
+
+
+    }
+</script>
+
+
+</html>

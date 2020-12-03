@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <title>Operator In js</title>
+</head>
+
+<body>
+    <script>
+        var a = 6;
+        var b = 6;
+        var x = 4;
+        var y = 2;
+        var r = 3;
+        var d = 3;
+        console.log(a++);
+        console.log(a); //value 7
+        console.log(b++); //hold value is 7
+        console.log(b + a); //when you display a then ans is coming
+        console.log(b--); // hold value is 7
+        console.log(b); //display value is 6
+        console.log(--b);
+        console.log(x++ + y);
+        //x=4 y=2   \\6
+        //x=5 y=2
+        console.log(++x + y);
+        // x=6 y=2 \\8
+        //x=6 y=2
+        console.log(++y + x);
+        //y=3 x=6 \\9
+        //y=3 x=6
+        console.log(x-- + y);
+        //x=6  y=3 \\9
+        // x=5 y=3
+        console.log(x++ + y--);
+        //x=5 y=3 \\8
+        // x=6 y=2
+        console.log(++y - ++x);
+        //y=3 x=7 \\-4
+        //y=3 x=7
+        console.log(x-- - ++y)
+            //x=7 y=4 \\3
+            //x=6 y=4
+        console.log(y++ - x--);
+        //y=4 x=6 \\-2
+        //y=5 x=5
+        console.log(y-- % x++);
+        // y=5 x=5 \\ 0
+        //x=6 y=4
+        console.log(++x / y++);
+        //x=7 y=4 \\1.75
+        //x=7 y=5
+        console.log(x++ * y--);
+        // x=7 y=5\\35
+        //x=8 y=4
+        console.log(--x * y++);
+        //x=7 y=4 \\28
+        //x=7 y=5
+        console.log(x++ * y++);
+        //x=7 y=5 \\35
+        //x=8 y=6
+        console.log(++x * y--);
+        //x=9 y=6 \\54
+        //x=9 y=5
+        console.log(x++ * y--);
+        //x=9 y=5 \\45
+        //x=10 y=4
+        console.log(x++ * y--);
+        //x=10 y=4 \\40
+        // x=11 y=3
+        console.log(--x * y);
+        //x=10 y=3
+        //x=10 y=3
+        console.log(x * --y);
+        //x=10 y=2
+        console.log(x++ * y--);
+        //x=10 y=2 \\ 20
+        //x=11 y=1;
+        console.log(x++ * --y);
+        //x=11 y=0;
+        //x=12 y=0;
+        console.log(x++ * y--);
+        //x=12 y=0;
+        //x=13 y=-1
+        // console.log(x++ * y--);
+        // //x=13 y= -1
+        // //x=14 y= -1
+        console.log(r++ + --d);
+        // r=3 d=2
+        //r=4 d=2
+        console.log(--r * d);
+        //r=3 d=2
+    </script>
+</body>
+
+</html>

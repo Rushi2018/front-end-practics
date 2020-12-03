@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>Assignment 2</title>
+    <script>
+        function dis1() {
+            var Name = document.getElementById("id1").value;
+            document.getElementById("myPara").innerHTML = "Student Name:-" + Name;
+            var marks = document.getElementById("id2").value;
+            document.getElementById("phy").innerHTML = "Physics Marks" + marks;
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <p id="myPara"></p>
+        <p id="phy"></p>
+        <p id="chemistry"></p>
+        <p id="math"></p>
+        <p id="biology"></p>
+        <p id="zoology"></p>
+        <input type="reset">
+
+        <label>Full Name</label>
+        <input type="text " id="id1" required><br><br><br>
+        <label>Faculty:-</label><br><br> &nbsp;&nbsp;
+        <label>Arts</label>
+        <input type="checkbox">
+        <label>Commerce</label>
+        <input type="checkbox">
+        <label>Science</label>
+        <input type="checkbox"><br><br>
+        <label>Subject</label><br><br>
+        <label>Physics:-</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text " id="id2" required> <input type="text" value="Out of 100" readonly placeholder="Out Of 100"><br><br>
+        <label>Chemistry:-</label>
+        <input type="text " required id="id3"> <input type="text" value="Out of 100" readonly placeholder="Out Of 100"><br><br>
+        <label>Math's:-</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text " required> <input type="text" value="Out of 100" readonly placeholder="Out Of 100"><br><br>
+        <label>Biology:-</label>&nbsp;&nbsp;&nbsp;
+        <input type="text " readonly> <input type="text" value="Out of 100" readonly placeholder="Out Of 100"><br><br>
+        <label>Zoology:-</label>&nbsp;&nbsp;
+        <input type="text " required> <input type="text" value="Out of 100" readonly placeholder="Out Of 100"><br><br>
+
+    </form>
+    <button value="submit" onclick="dis1();" id="btn">Submit</button>
+    <!-- <div>
+        <h2>Arts</h2>
+        <select id="Arts">
+
+            <option value="Political Science">Political Science</option>
+            <option value="Geography">Geography</option>
+            <option value="History">History</option>
+            <option value="Hindi">Hindi</option>
+          </select>
+
+    </div> -->
+
+</body>
+
+</html>

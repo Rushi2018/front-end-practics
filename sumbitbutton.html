@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="Eng">
+
+<head>
+    <title>Submit Button</title>
+    <script src="submit1.js"></script>
+</head>
+
+<body>
+    <form>
+        <label>Name</label>
+        <input type="text" id="fname">
+
+        <label>Name Of Mobile</label>
+        <input type="text" id="mobile">
+
+        <label>Payment</label>
+        <input type="number" id="payment">
+
+        <p id="id1"></p>
+        <p id="id2"></p>
+        <p id="id3"></p>
+
+        <button onclick="displaydata()">Purches</button>
+        <button onclick="data1()">dada</button>
+
+    </form>
+
+    <script>
+        function displaydata() {
+            var Name = document.getElementById("fname").value
+            var Nameofmobile = document.getElementById("mobile").value
+            var Payment = document.getElementById("payment").value
+
+            document.getElementById("id1").innerHTML = "fname " + Name
+            document.getElementById("id2").innerHTML = "Nameofmobile " + Nameofmobile
+            document.getElementById("id3").innerHTML = "Payment " + Payment
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <title>link submit button</title>
+</head>
+
+
+<body>
+
+
+    <form>
+
+        <fieldset>
+
+            <legend>Form Example</legend>
+            <label>First Name</label>
+            <input type="text" id="fName">
+
+            <label>Last Name</label>
+            <input type="text" id="lName">
+
+            <label>Email</label>
+            <input type="email" id="email">
+
+            <label>Password</label>
+            <input type="password" id="password">
+        </fieldset>
+    </form>
+
+    <button onclick="displaydata()">submit</button>
+
+
+
+    <p id="FirstName"></p>
+    <p id="LastName"></p>
+    <p id="displayemail"></p>
+    <p id="displaypassword"></p>
+
+    <label>Name Of Employee</label>
+    <input list="empid">
+    <datalist id="empid">
+        <option value="Rushi Divate"></option>
+        <option value="Sanket Bhosale"></option>
+        <option value="Samarth Shete"></option>
+        <option value="Saurabh murtadak"></option>
+    </datalist>
+</body>
+<script>
+    function displaydata() {
+        var lala = document.getElementById("fName").value
+        var bala = document.getElementById("lName").value
+        var email = document.getElementById("email").value
+        var password = document.getElementById("password").value
+
+        document.getElementById("FirstName").innerHTML = "FirstName :" + lala
+        document.getElementById("LastName").innerHTML = "LastName :" + bala
+        document.getElementById("displayemail").innerHTML = "email :" + email
+        document.getElementById("displaypassword").innerHTML = "password :" + password
+
+    }
+</script>
+
+
+
+
+</html>

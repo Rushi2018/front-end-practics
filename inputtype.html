@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>Input Type</title>
+</head>
+
+<body>
+    <form>
+        <label for="mycolor">color choose</label>
+        <input type="color" id="cid">
+        <button type="button" onclick="showColorCode()" id="mycolor">Show color</button>
+
+        <label for="mydate">Choose date</label>
+        <input type="date" value="2020-12-01" id="did">
+        <button type="button" onclick="showselecteddate()" id1="mydate">Show date</button>
+
+        <label for="">text</label>
+
+    </form>
+    <script>
+        function showColorCode() {
+            var colorcode = document.getElementById("cid").value
+            alert(colorcode)
+        }
+
+        function showselecteddate() {
+            var date = document.getElementById("did").value
+            alert(date)
+        }
+    </script>
+</body>
+
+</html>
