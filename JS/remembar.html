@@ -3,20 +3,7 @@
 <head>
     <title>remembar</title>
     <meta charset="UTF-8">
-</head>
-
-<body>
-    <form name="myform">
-        <label>Name</label>
-        <input type="text" name="myname" id="username"> <br><br>
-        <p id="myPara"></p>
-        <label>city</label>
-        <input type="text" name="mycity" id="id2"> <br><br>
-        <label>address</label>
-        <input type="text" name="myaddress"><br><br>
-        <input type="submit" value="Submit" onclick="validate()" id="3">
-    </form>
-    <script>
+    <!-- <script>
         function validate() {
             var a = document.getElementById("username").value;
             var b = document.getElementById("id2").value;
@@ -31,7 +18,64 @@
                 return false
             }
         }
+    </script> -->
+</head>
+
+<body>
+    <form name="myform">
+        <label>Name</label>
+        <input type="text" name="myname" id="username"> <br><br>
+        <p id="myPara"></p>
+        <label>city</label>
+        <input type="text" name="mycity" id="id2"> <br><br>
+        <label>address</label>
+        <input type="text" name="myaddress" id="id3"><br><br>
+        <input type="submit" value="Submit" onclick="validate();">
+    </form>
+    <script>
+        function validate() {
+            var rd = document.getElementById("username").value;
+            regx = /^[A-Za-z]+$/
+
+            if (regx.test(rd) === true) {
+                alert("Name Is Valid");
+
+            } else {
+                alert("Name Is Invalid");
+
+            }
+
+            validatemyfun1();
+            validatemyfun2();
+
+        }
+
+
+
+        function validatemyfun1(md) {
+            var md = document.getElementById("id2").value;
+            regx = /^[A-Za-z]+$/
+            if (regx.test(md) === true) {
+                alert("city name is valid")
+
+            } else
+                alert("city name is not valid")
+
+        }
+
+        function validatemyfun2(ed) {
+            var ed = document.getElementById("id3").value;
+            regx = /^[A-Za-z]+$/
+            if (regx.test(ed) === true) {
+                alert("address is valid")
+
+            } else
+                alert("address is not valid")
+
+
+        }
     </script>
+
 </body>
 
 </html>
