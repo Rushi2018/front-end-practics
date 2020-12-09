@@ -1,30 +1,81 @@
 <html>
 
 <head>
-    <title>form validation</title>
+    <title>remembar</title>
+    <meta charset="UTF-8">
+    <!-- <script>
+        function validate() {
+            var a = document.getElementById("username").value;
+            var b = document.getElementById("id2").value;
+
+            var regex = /^[A-Za-z]+$/
+
+            if (regex.test(a) == true) {
+                alert("user name is valid")
+                return false
+            } else {
+                alert("user name is invalid");
+                return false
+            }
+        }
+    </script> -->
 </head>
 
 <body>
-    <form name="form1">
-        <label>FirstName</label>
-        <input type="text" name="username" id="fName"> <br><br>
-
-        <label>LastName</label>
-        <input type="text" name="usersirname"> <br><br>
-
-        <label>Password</label>
-        <input type="text" name="userpassword"> <br><br>
-
-        <input type="submit" value="Submit" onclick="dis();">
-        <p id="para"></p>
-
+    <form name="myform">
+        <label>Name</label>
+        <input type="text" name="myname" id="username"> <br><br>
+        <p id="myPara"></p>
+        <label>city</label>
+        <input type="text" name="mycity" id="id2"> <br><br>
+        <label>address</label>
+        <input type="text" name="myaddress" id="id3"><br><br>
+        <input type="submit" value="Submit" onclick="validate();">
     </form>
     <script>
-        function dis() {
-            var FirstName = document.getElementById("fName").value
-            var regx
+        function validate() {
+            var rd = document.getElementById("username").value;
+            regx = /^[A-Za-z]+$/
+
+            if (regx.test(rd) === true) {
+                alert("Name Is Valid");
+
+            } else {
+                alert("Name Is Invalid");
+
+            }
+
+            validatemyfun1();
+            validatemyfun2();
+
+        }
+
+
+
+        function validatemyfun1(md) {
+            var md = document.getElementById("id2").value;
+            regx = /^[A-Za-z]+$/
+            if (regx.test(md) === true) {
+                alert("city name is valid")
+
+            } else
+                alert("city name is not valid")
+
+        }
+
+        function validatemyfun2(ed) {
+            var ed = document.getElementById("id3").value;
+            regx = /^[A-Za-z]+$/
+            if (regx.test(ed) === true) {
+                alert("address is valid")
+
+            } else
+                alert("address is not valid")
+
+
         }
     </script>
+
 </body>
 
 </html>
