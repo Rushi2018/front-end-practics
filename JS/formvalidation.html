@@ -31,6 +31,8 @@
         <label>address</label>
         <input type="text" name="myaddress" id="id3"><br><br>
         <input type="submit" value="Submit" onclick="validate();">
+        <label>Mobile number</label>
+        <input type="number" value="number" name="usermobno" id="id4">
     </form>
     <script>
         function validate() {
@@ -45,14 +47,14 @@
 
             }
 
-            validatemyfun1();
-            validatemyfun2();
+            validatecityname();
+            validateaddress();
 
         }
 
 
 
-        function validatemyfun1(md) {
+        function validatecityname(md) {
             var md = document.getElementById("id2").value;
             regx = /^[A-Za-z]+$/
             if (regx.test(md) === true) {
@@ -63,7 +65,7 @@
 
         }
 
-        function validatemyfun2(ed) {
+        function validateaddress(ed) {
             var ed = document.getElementById("id3").value;
             regx = /^[A-Za-z]+$/
             if (regx.test(ed) === true) {
