@@ -1,0 +1,173 @@
+<html>
+
+<head>
+    <title>assignment of form validation</title>
+</head>
+
+<body>
+    <form name="form">
+        <fieldset>
+            <legend>
+                <h1 style="color: green; text-align: center ">Form Validation</h1>
+            </legend>
+            <label>First Name:</label>&nbsp;&nbsp;&nbsp;
+            <input type="text" id="fname"> <br><br>
+
+            <label>Last Name</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="lname1"><br><br>
+
+            <label>Address</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="addresss"><br><br>
+
+            <label>Mobile No</label>&nbsp;&nbsp;&nbsp;
+            <input type="text" id="mobileno" maxlength="10"><br><br>
+
+            <label>Gmail</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="gmail" id="gmail1" required><br><br>
+
+            <label for="">Choose Subjects</label><br><br>
+            <label>Physics</label>
+            <input id="physics" type="checkbox" name="subj[]" checked>
+            <label>Chemistry</label>
+            <input id="chemistry" type="checkbox" name="subj[]">
+            <label>Math's</label>
+            <input id="math" type="checkbox" name="subj[]">
+            <label>Biology</label>
+            <input id="biology" type="checkbox" name="subj[]"><br><br>
+
+            <label>Gender</label><br><br>
+            <label>Male</label>
+            <input type="radio" name="rd1" value="rd11" id="gendermalee">
+            <label>Female</label>
+            <input type="radio" name="rd1" value="rd22" id="genderfemalee"><br><br>
+
+            <input type="submit" value="Submit" onclick="displayData();">
+            <input type="reset"><br><br>
+        </fieldset>
+
+
+        <p id="id1"></p>
+    </form>
+    <script>
+        function displayData() {
+            var firstName = document.getElementById("fname").value;
+
+            regx = /^[A-Za-z]+$/
+            if (regx.test(firstName) === true)
+
+
+                alert("Name is valid")
+            else
+                alert("*Enter Charecter")
+
+            lastName();
+
+
+
+        }
+
+        function lastName() {
+            var name = document.getElementById("lname1").value;
+            regx = /^[A-Za-z]+$/
+            if (regx.test(name) === true)
+                alert("Last Name is Valid")
+            else {
+                alert("Enter the alphabet")
+            }
+
+            address();
+        }
+
+
+        function address() {
+            var b = document.getElementById("addresss").value
+            regx = /^[A-Za-z]+$/
+            if (regx.test(b) === true)
+                alert("address is valid")
+            else
+                alert("enter charecter")
+
+            number();
+
+        }
+
+
+        function number() {
+            var mobno = document.getElementById("mobileno").value;
+            regx = /("^[0-9]+$")/
+            if (regx.test(mobno) == true)
+                alert("number is valid")
+            else
+                alert("number is valid")
+
+
+            gmail();
+        }
+
+        function gmail() {
+            var c = document.getElementById("gmail1").value;
+            regx = /^(.+)@(\S+)$/
+            if (regx.test(c) == true)
+                alert("email is valid")
+            else {
+                alert("email is invalid")
+
+                maleee();
+            }
+
+            function maleee() {
+                var gender = document.getElementsByName("rd1");
+                var fegender = document.getElementsByName("rd1");
+                if (gender[0].checked == true)
+                    alert("male is selected")
+                else if (fegender[1].checked == true)
+                    alert("female is selected")
+                else {
+                    alert("select gender")
+                }
+                validateCheckbox();
+            }
+
+            function validateCheckbox() {
+                var phy = document.getElementByName("subj[]");
+                var chem = document.getElementByName("subj[]");
+                var math = document.getElementByName("subj[]");
+                var bio = document.getElementByName("subj[]");
+
+                var i,
+                    chks = document.getElementsByName('subj[]');
+
+                for (i = 0; i < chks.length; i++) {
+                    if (chks[i].checked) {
+
+                        //Here how i should alert selected values 
+                        alert("")
+
+
+                    } else {
+                        alert('No item selected');
+
+                    }
+
+
+
+                    // if (phy[0].checked == true)
+                    //     alert("physics is selected")
+                    // else if (chem[1].checked == true)
+                    //     alert("chemistry is selected")
+                    // else if (math[2].checked == true)
+                    //     alert("maths is selected")
+                    // else if (bio[3].checked == true)
+                    //     alert("biology is selected")
+                    // else {
+                    //     alert("select a subject")
+                    // }
+
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>
