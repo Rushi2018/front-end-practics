@@ -130,40 +130,42 @@
 
             function validateCheckbox() {
                 var phy = document.getElementByName("subj[]");
-                var chem = document.getElementByName("subj[]");
-                var math = document.getElementByName("subj[]");
-                var bio = document.getElementByName("subj[]");
-
-                var i,
-                    chks = document.getElementsByName('subj[]');
-
-                for (i = 0; i < chks.length; i++) {
-                    if (chks[i].checked) {
-
-                        //Here how i should alert selected values 
-                        alert("")
-
-
-                    } else {
-                        alert('No item selected');
-
-                    }
+                // var chem = document.getElementByName("subj[]");
+                // var math = document.getElementByName("subj[]");
+                // var bio = document.getElementByName("subj[]");
 
 
 
-                    // if (phy[0].checked == true)
-                    //     alert("physics is selected")
-                    // else if (chem[1].checked == true)
-                    //     alert("chemistry is selected")
-                    // else if (math[2].checked == true)
-                    //     alert("maths is selected")
-                    // else if (bio[3].checked == true)
-                    //     alert("biology is selected")
-                    // else {
-                    //     alert("select a subject")
-                    // }
+
+                for (i = 0; i < 4. length; i++) {
+                    if (phy[i].checked == true)
+                        alert("physics")
+                    else
+                        alert("not selected")
+                        // elseif(chem[i].checked == true)
+                        // alert("chem selected")
+                        // elseif
+                        // alert
+
 
                 }
+
+
+
+
+
+                // if (phy[0].checked == true)
+                //     alert("physics is selected")
+                // else if (chem[1].checked == true)
+                //     alert("chemistry is selected")
+                // else if (math[2].checked == true)
+                //     alert("maths is selected")
+                // else if (bio[3].checked == true)
+                //     alert("biology is selected")
+                // else {
+                //     alert("select a subject")
+                // }
+
             }
         }
     </script>
