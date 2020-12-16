@@ -9,47 +9,71 @@
         function displayMarks() {
             var a = document.getElementById("input").value;
             if (a >= 45 && a <= 60) {
-                document.getElementById("id1").innerHTML = "Second Class"
-            } else if (a >= 60 && a <= 70) {
-                document.getElementById("id2").innerHTML = "First Class"
-            } else if (a >= 70 && a <= 100) {
-                document.getElementById("id3").innerHTML = "Distingstion"
-            } else {
-                document.getElementById("id4").innerHTML = "Error"
+                document.getElementById("myPara").innerHTML = "Second Class"
+            } else if (a >= 61 && a <= 70) {
+                document.getElementById("id1").innerHTML = "First Class"
+            } else if (a >= 71 && a <= 80) {
+                document.getElementById("id2").innerHTML = "Distingtion"
+            } else if (a >= 35 && a <= 44) {
+                document.getElementById("id3").innerHTML = "Third Class"
+            } else if (a >= 81 && a <= 100) {
+                document.getElementById("id4").innerHTML = "A+ Grade"
             }
 
         }
     </script>
     <style>
         .student {
-            color: green;
-            background-color: skyblue;
+            color: white;
+            background-color: blue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
         
-        #id10 {}
+        #formInfo {}
+        
+        #id10 {
+            background-image: url("dgree.jpg");
+            background-size: 1500px 900px;
+            background-position: center;
+            height: 100%;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
     </style>
 </head>
 
-<body>
-    <form id="id10">
-        <div class="div">
-            <h1 class="student">Student Passing Category</h1>
-            <Label>Student Mark's</Label>
+<body id="id10" style="margin: 0;">
+    <form>
+        <div id="formInfo">
+            <h1 class="student" style="margin-top: 10px; margin-left: px;">Student Passing Category</h1>
+            <h2>Student Mark's</h2>
             <input type="text" id="input">
 
-            <p id="myPara"></p>
-            <p id="id1"></p>
-            <p id="id2"></p>
-            <p id="id3"></p>
-            <p id="id4"></p>
+            <h1>
+                <p id="myPara"></p>
+            </h1>
+            <h1>
+                <p id="id1"></p>
+            </h1>
+            <h1>
+                <p id="id2"></p>
+            </h1>
+            <h1>
+                <p id="id3"></p>
+            </h1>
+            <h1>
+                <p id="id4"></p>
+            </h1>
             <input type="reset"><br>
-
-
         </div>
-
-
     </form>
-    <button onclick="displayMarks()">Total Marks</button>
+
+
+    <button onclick="displayMarks()"><img src="submit button.png" id="img"></button>
+
+
+
 
 
 
