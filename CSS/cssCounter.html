@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            counter-reset: rushi;
+        }
+        /* h1::before {
+            counter-increment: tag;
+            content: "tag" counter(tag)":";
+        } */
+        
+        h1::before {
+            counter-increment: rushi;
+            content: "rushi" counter(rushi)".";
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>div tag</h1>
+    <h1>Image tag</h1>
+    <h1>heading tag</h1>
+    <h1>svg tag</h1>
+</body>
+
+</html>
