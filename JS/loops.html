@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Loop's</p>
+    <script>
+        function displayData() {
+            var i = document.getElementById("inputtype").value;
+            for (i = 0; i < 1000; i++) {
+                if (i % 2 == 0) {
+
+
+
+                    document.getElementById("myPara").innerHTML = "Even no"
+                } else if (i % 2 !== 0) {
+                    document.getElementById("myPara").innerHTML = "Odd no"
+                }
+
+
+
+
+
+
+
+
+
+            }
+    </script>
+    <h1>Check Even An Odd No</h1>
+    <label>Check Number</label>
+    <input type="text" id="inputtype"> <br><br>
+    <p id="myPara"></p>
+    <p id="myPara1"></p>
+    <button onclick="displayData()" id="btn">Check No</button>
+</body>
+
+</html>

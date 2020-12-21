@@ -4,29 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .form {
-            color: darkblue;
-        }
-    </style>
-    <script>
-        function count() {
-
-            var cost = document.getElementById("id1").value;
-            var sell = document.getElementById("id2").value;
-            var b = cost - sell;
-            var a = sell - cost;
-            if (sell > cost) {
-                document.getElementById("id3").innerHTML = "Profit is" + a;
-            } else if (sell < cost) {
-                document.getElementById("id3").innerHTML = "Loss is" + b;
-
-            } else {
-                document.getElementById("id3").innerHTML = "No profit an Loss";
+    <ti tle>Document</title>
+        <style>
+            .form {
+                color: darkblue;
             }
-        }
-    </script>
+        </style>
+        <script>
+            function count() {
+
+                var cost = document.getElementById("id1").value;
+                var sell = document.getElementById("id2").value;
+                var b = cost - sell;
+                var a = sell - cost;
+                if (sell > cost) {
+                    document.getElementById("id3").innerHTML = "Profit is" + a;
+                } else if (sell < cost) {
+                    document.getElementById("id3").innerHTML = "Loss is" + b;
+
+                } else {
+                    document.getElementById("id3").innerHTML = "No profit an Loss";
+                }
+            }
+        </script>
 </head>
 
 <body style="background-image: url(paise.jpg); background-repeat: no-repeat; background-size: 100%;">
