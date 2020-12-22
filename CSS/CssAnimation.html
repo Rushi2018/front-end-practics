@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: black;
+            color: royalblue;
+            height: 200px;
+            width: 150px;
+            position: relative;
+            -webkit-animation: 5s infinite;
+            animation: myName 5s infinite;
+            animation-delay: 2s;
+            animation-direction: alternate;
+            border: 40px green;
+            padding-left: 200px;
+            text-align: left;
+        }
+        
+        @keyframes myName {
+            from {
+                background-color: green;
+            }
+            to {
+                background-image: red;
+            }
+        }
+        
+        @-webkit-keyframes myName {
+            from {
+                background-color: darkblue;
+            }
+            to {
+                background-image: green;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        Front End Devlopment
+    </div>
+</body>
+
+</html>
