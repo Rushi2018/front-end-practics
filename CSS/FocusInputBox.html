@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            background-color: grey;
+            height: 250px;
+            width: 200px;
+            border-radius: 20px;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: green;
+            border-bottom: 3px solid red;
+            border: 10px;
+            text-shadow: 2px 4px 10px(red black);
+        }
+        
+        input[type="text"] {
+            background-color: hotpink;
+        }
+        
+        input[type="password"] {
+            background-color: indigo;
+        }
+        
+        input[type="password"]:focus {
+            background-color: blue;
+            color: green;
+            border-radius: 1000px;
+        }
+        
+        input:enabled {
+            background-color: black;
+        }
+        
+        input:checked+span {
+            background-color: violet;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div>
+            <h1>Login Form</h1>
+            <label>Name</label><br>
+            <input type="text">
+            <label>Password</label>
+            <input type="password"><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset"><br><br>
+            <input type="radio" name="gender" value="gender" checked>
+            <span>male</span>
+            <input type="radio" name="gender" value="gender">
+            <span>female</span>
+
+        </div>
+
+
+    </form>
+</body>
+
+</html>
