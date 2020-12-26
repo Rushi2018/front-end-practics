@@ -7,62 +7,59 @@
     <title>Document</title>
     <style>
         * {
-            margin: 0;
             padding: 0;
+            margin: 0;
             box-sizing: border-box;
-        }
-        
-        section {
-            background-color: cyan;
         }
         
         div {
             border: 1px solid black;
         }
         
-        .myDiv1 {
+        .div1 {
             background-color: red;
         }
         
-        .myDiv2 {
-            background-color: yellow;
+        .div2 {
+            background-color: dodgerblue;
         }
         
-        .myDiv3 {
+        .div3 {
             background-color: green;
         }
         
         @media(min-width: 768px) {
-            section {
+            .maindiv {
+                width: 100%;
+                background-color: cyan;
+                border: 1px solid black;
                 display: flex;
-                justify-content: space-between;
             }
         }
     </style>
 </head>
 
 <body>
-    <section class="Container">
-        <div class="myDiv1">
-            <p>A A paragraph is a series of related sentences developing a central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group of sentences that supports one central, unified idea.
-                Paragraphs add one idea at a time to your broader argument.
+    <div class="maindiv">
+
+        <div class="div1">
+            <p> 1 Wikis are enabled by wiki software, otherwise known as wiki engines. A wiki engine, being a form of a content management system, differs from other web-based systems such as blog software, in that the content is created without any defined
+                owner or leader, and wikis have little inherent structure,
             </p>
         </div>
 
-        <div class="myDiv2">
-            <p>C A paragraph is a series of related sentences developing a central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group of sentences that supports one central, unified idea.
-                Paragraphs add one idea at a time to your broader argument.
+        <div class="div2">
+            <p> 1 Wikis are enabled by wiki software, otherwise known as wiki engines. A wiki engine, being a form of a content management system, differs from other web-based systems such as blog software, in that the content is created without any defined
+                owner or leader, and wikis have little inherent structure,
             </p>
         </div>
 
-        <div class="myDiv3">
-            <p>C A paragraph is a series of related sentences developing a central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group of sentences that supports one central, unified idea.
-                Paragraphs add one idea at a time to your broader argument.
+        <div class="div3">
+            <p> 3 Wikis are enabled by wiki software, otherwise known as wiki engines. A wiki engine, being a form of a content management system, differs from other web-based systems such as blog software, in that the content is created without any defined
+                owner or leader, and wikis have little inherent structure,
             </p>
         </div>
-
-
-    </section>
+    </div>
 </body>
 
 </html>

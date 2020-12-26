@@ -6,25 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #mainDiv {
+        .maindiv {
+            background-color: dodgerblue;
+            width: 100%;
             display: flex;
             flex-wrap: wrap;
-            background-color: dodgerblue;
         }
         
-        section>div {
-            width: 150px;
-            background-color: white;
-            line-height: 75px;
+        div {
+            background-color: brown;
             margin: 10px;
-            font-size: 30px;
-            text-align: center;
+            width: 100px;
+            height: 100%;
+            background-color: brown;
         }
     </style>
 </head>
 
 <body>
-    <section id="mainDiv">
+    <div class="maindiv">
         <div>1</div>
         <div>2</div>
         <div>3</div>
@@ -37,7 +37,7 @@
         <div>10</div>
         <div>11</div>
         <div>12</div>
-    </section>
+    </div>
 </body>
 
 </html>
