@@ -1,0 +1,45 @@
+.mainDiv {
+    background-color: dodgerblue;
+}
+
+.div1 {
+    background-color: red;
+}
+
+.div2 {
+    background-color: blue;
+}
+
+.div3 {
+    background-color: green;
+}
+
+.div4 {
+    background-color: yellow;
+}
+
+.div5 {
+    background-color: black;
+}
+
+.div6 {
+    background-color: purple;
+}
+
+div3 {
+    background-color: green;
+}
+
+.div4 {
+    background-color: yellow;
+    grid-template-columns: min-content repeat(6, 1fr);
+}
+
+.div5 {
+    background-color: black;
+    color: white;
+}
+
+.div6 {
+    background-color: purple;
+}
