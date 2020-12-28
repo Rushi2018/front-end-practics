@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mainDiv {
+            background-color: cyan;
+            display: grid;
+            grid-template-rows: 200px 150px 150px;
+            grid-template-columns: 250px 200px 200px;
+            text-align: center;
+            line-height: 165px;
+            margin: 40px;
+            border: 15px solid cyan;
+            grid-gap: 20px;
+            border-radius: 10px;
+        }
+        
+        .div1 {
+            background-color: red;
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+        
+        .div2 {
+            background-color: green;
+            grid-row: 2/-1;
+        }
+        
+        .div3 {
+            background-color: orange;
+            grid-column: 2/4;
+        }
+        
+        .div4 {
+            background-color: purple;
+            grid-row-start: 2;
+            grid-column-start: 4;
+        }
+        
+        .div5 {
+            background-color: pink;
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainDiv">
+
+        <div class="div1">Header</div>
+        <div class="div2">Menu</div>
+        <div class="div3">Main</div>
+        <div class="div4">Right</div>
+        <div class="div5">footer</div>
+
+    </div>
+</body>
+
+</html>
