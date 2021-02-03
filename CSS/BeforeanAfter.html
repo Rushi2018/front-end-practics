@@ -10,22 +10,40 @@
             content: " welcome bro";
         }
         
-        p::before {
-            content: " Front End Devloper ";
+        p::first-letter {
+            font-size: 100px;
         }
         
-        li::before {
-            content: url(Diwali.jpg);
+        p::first-line {
+            text-transform: uppercase;
+            /* its dynamic part of this property
+            */
+        }
+        
+         :root {
+            background-color: green;
+        }
+        
+        body {
+            background-color: greenyellow;
+        }
+        
+        p:empty {
+            border: 1px solid red;
+        }
+        
+        li::selection {
+            background-color: rosybrown;
         }
     </style>
 </head>
 
 <body>
-    <p>Hello</p>
-    <p>Hello</p>
-    <p>Hello</p>
-    <p>Hello</p>
-    <p>Hello</p>
+    <p>Hello A paragraph is a series of related sentences developing a central idea, called the topic. Try t</p>
+    <p>Hello A paragraph is a series of related sentences developing a central idea, called the topic. Try t</p>
+    <p>Hello A paragraph is a series of related sentences developing a central idea, called the topic. Try t</p>
+    <p>Hello A paragraph is a series of related sentences developing a central idea, called the topic. Try t</p>
+    <p>Hello A paragraph is a series of related sentences developing a central idea, called the topic. Try t</p>
 
     <ul>
         <li>Rushi Divate</li>
@@ -33,6 +51,8 @@
         <li>Rushi Divate</li>
         <li>Rushi Divate</li>
     </ul>
+    <p></p>
+    <p></p>
 </body>
 
 </html>
