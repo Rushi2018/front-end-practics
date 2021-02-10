@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //variable var
+        var a = "rushi divate"
+        var w = "rushi"
+        var w = "divate"
+        console.log(a);
+        console.log(w);
+
+        var z = "hello rushi"
+        document.write(z);
+
+        //variable let
+        //we can't declare again let keyword
+
+        b = "google"
+        b = "rushi"
+        b = "rusiiiii"
+        c = "hp"
+        c = "dp"
+        document.write(b);
+        document.write(c);
+
+        //variable const
+        //we can't declare again let const
+
+        const pi = 3.14;
+
+        document.write(pi);
+
+        var x = false //false is with cotation it will show in boolean data type 
+        var x = "false" // false is with without cotation it will displaying string data type
+        console.log(typeof(x))
+
+        var i = {
+            firstName: "rushi",
+            lastName: "Divate",
+            Country: "India",
+            village: "Sangamner",
+            MobileNumber: 8983195966,
+            Address: "Sangamner",
+            Computer: "Hp",
+            shop: "Pune-Nashik highway passing",
+            Parrent: "father"
+        }
+        console.log(typeof(i));
+
+        var n = "rushi"
+        console.log(typeof(n));
+
+        var u = ["HTML", "CSS", "JS"]
+
+        console.log(typeof(u))
+
+        var v
+        let l
+        console.log(typeof(v));
+        document.write(l);
+
+        //arthmatical operator
+
+        var a = 10;
+        b = 10
+        c = 50
+
+        // console.time()
+        console.log(--a + b++); //19
+        console.log(a++ + b++) //11
+        console.log(b) //12
+            // console.table(a + b)
+            // console.table()
+            // console.warn()
+            // console.timeEnd()
+
+        // console.log()
+
+
+
+        //compairision operator
+        // var a = 888
+        // var b = 888
+        // console.log(a >= b);
+
+        //if stmt; and if else stmt;
+
+
+        //percentage program and logical operator
+
+        var per = 93;
+
+        if (per <= 100 && per >= 80) {
+            document.write("You are in Distingtion")
+        } else if (per <= 79 && per >= 60) {
+            document.write("you are in first class")
+
+        } else if (per <= 59 && per >= 50) {
+            document.write("you are in second class")
+        } else if (per <= 40 && per >= 35) {
+            document.write(" you are Third Class")
+        } else {
+            document.write("enter valid number")
+        }
+
+        //logical or oprator
+
+        var a = 10;
+        var b = 20;
+
+        if (a > 10 || b < 20) {
+            document.write("any one display")
+        } else {
+            document.write("please enter valid no")
+        }
+
+        //logical not
+        var x = "20";
+        console.log(!x === 20 || x <= 20);
+        //t   \\  t
+        //true
+        //and operator
+        //t-t=t
+        //t-f=f
+        //f-t=f
+        //f-f=f
+
+        //or operator
+        //t-f=t
+        //f-t=t
+        //t-t=t
+        //f-f=f
+        var p = 35
+        console.log(!(p === "20" || p <= 20))
+        console.log(!(p == 20 && p == 35))
+
+        //ternary operator
+
+        var g = 50;
+        var r = 30;
+        console.log((g == 50 ? "true" : "false"))
+
+        //switch case
+        // var day = prompt("Enter Day")
+        // switch (day) {
+        //     case "1":
+        //         document.write("Today is monday")
+        //         break;
+
+        //     case "2":
+        //         document.write("today is tuesday")
+        //         break;
+
+        //     case "3":
+        //         document.write("today is wensday")
+        //         break;
+
+        //     case "4":
+        //         document.write("today is thusday")
+        //         break;
+
+        //     case "5":
+        //         document.write("today is friday")
+        //         break;
+
+        //     case "6":
+        //         document.write("today is saturday")
+        //         break;
+
+        //     case "7":
+        //         document.write("today is sunday")
+        //         break;
+        //     default:
+        //         document.write("Please enter Day")
+        //         break;
+
+        // }
+
+        var per = prompt("enter number");
+
+        switch (true) {
+            case "1":
+                (per <= 80 && per > 100)
+                document.write("Distingtion")
+                break;
+
+            case "2":
+                (per <= 79 && per > 60)
+                document.write("First Class")
+                break;
+
+            case "3":
+                (per <= 59 && per >= 50)
+                document.write("Second Class")
+                break;
+
+            case "4":
+                (per <= 49 && per >= 35)
+                document.write("Third Class")
+                break;
+
+
+            case "5":
+                (per <= 34 && per >= 30)
+                document.write("Fail")
+                break;
+            default:
+                document.write("Enter the valid Number")
+                break;
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
