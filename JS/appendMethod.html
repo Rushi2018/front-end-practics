@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <script>
+        var div = document.createElement("div")
+        document.body.append(div)
+        div.innerHTML = "hello div tag"
+        var p = document.createElement("p")
+        document.body.append(p)
+        div.appendChild(p)
+        p.innerHTML = "hello paragraph"
+    </script>
+</body>
+
+</html>
