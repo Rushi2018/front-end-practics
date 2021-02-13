@@ -183,34 +183,33 @@
 
         var per = prompt("enter number");
 
-        switch (true) {
-            case "1":
-                (per <= 80 && per > 100)
-                document.write("Distingtion")
+        switch (per) {
+            case (per <= 80 && per > 100):
+                document.write("Distingtion");
                 break;
 
             case "2":
-                (per <= 79 && per > 60)
-                document.write("First Class")
+                (per <= 79 && per > 60);
+                document.write("First Class");
                 break;
 
             case "3":
-                (per <= 59 && per >= 50)
-                document.write("Second Class")
+                (per <= 59 && per >= 50);
+                document.write("Second Class");
                 break;
 
             case "4":
-                (per <= 49 && per >= 35)
-                document.write("Third Class")
+                (per <= 49 && per >= 35);
+                document.write("Third Class");
                 break;
 
 
             case "5":
-                (per <= 34 && per >= 30)
-                document.write("Fail")
+                (per <= 34 && per >= 30);
+                document.write("Fail");
                 break;
             default:
-                document.write("Enter the valid Number")
+                document.write("Enter the valid Number");
                 break;
         }
     </script>
