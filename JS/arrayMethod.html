@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = ["rushi", "BCA", 18, "sangamner"]
+        a.push("Shine") //push is use add item in last index
+        document.write(a + "<br>");
+        a.push(21)
+        document.write(a + "<br>");
+        a.pop(); // it is use for delete last item of array 
+        document.write(a + "<br>");
+        a.sort() //its show's for alphabetic order
+        document.write(a + "<br>");
+        a.reverse() //array item show in reverse order its oppsite of sort method
+        document.write(a + "<br>")
+        a.shift("sanket") //it's use for delete first u=item of array
+        document.write(a + "<br>")
+        a.unshift("omkar") //it's use for add first item in array 
+        document.write(a + "<br>")
+        var b = ["shubham", "ganesh"]
+        a.concat(b); //it's use for concatinate 2 array item
+        document.write(a, b + "<br>")
+        var f = ["rushi", "sanket"]
+        var k = ["mama", "mami"]
+        var c = f.concat(k)
+        document.write(c + "<br>")
+        var m = c.join("-") // it's use for join the more array
+        document.write(m + "<br>")
+        var t = ["tushar", "abhi"]
+        var n = ["shubham", 1832, "soma"]
+        var d = t.concat(n) //it's use for concatinate 2 array
+        document.write(d + "<br>")
+        var l = d.join("rd", "kd", "md")
+        document.write(l + "<br>")
+        var c = [10, 20, 30, "rushi", "shubham"]
+        document.write(c + "<br>")
+        var k = c.slice(1, 4) //it use in diffrent method 
+        document.write(k + "<br>") // is called slice() method
+        var o = ["rushi ", "divate", 8983, 139139, "bhai"]
+        document.write(o + "<br>")
+        var p = o.slice(2, 3)
+        document.write(p + "<br>")
+        var e = ["Rushi", "Divate", "BCA", "21", 139193]
+        document.write(e + "<br>")
+        e.splice(1, 1, "RD") //its a splice method
+        document.write(e + "<br>")
+        e.splice(3, 3, "Call me RD")
+        document.write(e + "<br>")
+        var rd = ["rushi", "sanket", "samarth", "sonali"]
+        document.write(rd + "<br>")
+        var dd = rd.slice(0, 3)
+        document.write(dd + "<br>")
+        var rr = ["java", "webDev", "php", "js"]
+        document.write(rr + "<br>")
+        rr.splice(1, 1, "Python")
+        document.write(rr + "<br>") //now clear slice an splice
+        var kk = ["Job", "Business", "workLoad", "thatIt"]
+        document.write(kk + "<br>")
+        var dd = Array.isArray(dd + "<br>") //it's called isArray Method;
+        document.write(dd + "<br>")
+        if (dd + "<br>") {
+            document.write("this is array" + "<br>")
+        } else {
+            document.write("this is not Array" + "<br>")
+        } //its use in if else function
+
+        var pp = ["this ", "is", "array"]
+        document.write(pp + "<br>")
+        var dd = Array.isArray(pp + "<br>")
+        document.write(dd + "<br>") //this is isArray Method
+        var pp = ["rushi", "divate", "bca", 1832, "divate"]
+        document.write(pp + "<br>")
+        var dp = pp.indexOf("divate", 3)
+        document.write(dp + "<br>") //this is indexOf method;
+        var ff = ["bhau", "omkar", "kaka", "bhau"] //when you search diffrent thing it will have show -1 values
+        document.write(ff + "<br>")
+        var fp = ff.indexOf("bhau", 2)
+        document.write(fp + "<br>")
+        var gk = ["rushi", "sanket", "shubham", "sanket"]
+        document.write(gk + "<br>")
+        var pk = gk.lastIndexOf("shubham")
+        document.write(pk)
+    </script>
+</body>
+
+</html>
