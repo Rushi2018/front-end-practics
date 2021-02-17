@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = ["rushi", 18, "BCA", "Sangamner"]
+        document.write(a + "<br>")
+        a[1] = "21"; //change values of array
+        document.write(a + "<br>")
+        delete a[2]; //delete value of array
+        a[3] = "MCA"; //again change of array
+        document.write(a + "<br>")
+        delete a[3];
+        document.write(a + "<br>") //again delete values of array
+        delete a[0];
+        document.write(a + "<br>")
+        delete a[1];
+        document.write(a + "<br>")
+            //now all item are deleted from array
+        a[0] = "rushi"
+        document.write(a + "<br>")
+        a[1] = "21"
+        document.write(a + "<br>")
+        a[2] = "Sangamner"
+        document.write(a + "<br>")
+        a[3] = "BCA"
+        document.write(a + "<br>")
+    </script>
+</body>
+
+</html>
