@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = ["java", "php", "js", "html", "css"]
+        document.write(a + "<br>")
+        var b = a.includes("java")
+        document.write(b + "<br>") //this is includes method it's use for the search-
+        var b = a.includes("js") // any array and it is case sansitive method
+        document.write(b + "<br>")
+        var checked = [12, 23, 45, 66, 78]
+        document.write(checked + "<br>")
+        var d = checked.some(checkValue); // some is only check one value
+        document.write(d + "<br>") // and it's display that value
+
+        function checkValue(checked) {
+            return checked <= 90
+        }
+
+        var aaa = [10, 20, 30, 40, 50]
+        document.write(aaa + "<br>")
+        var ddd = aaa.every(checkingValue)
+        document.write(ddd + "<br>") //every is check all values
+
+        function checkingValue(ages) { //then it will run
+            return ages >= 50;
+        }
+
+        var dd = [10, 20, 30, 40, 50]
+        document.write(dd + "<br>")
+        var cc = dd.find(findArray) // its use for find the value
+        document.write(cc + "<br>") //of array's
+
+        function findArray(finding) { // it should called function
+            return finding >= 20
+
+        }
+
+        var bba = [10, 20, 30, 40, 50]
+        document.write(bba + "<br>")
+        var bbaa = bba.findIndex(findIndex) //when condition is true
+        document.write(bbaa + "<br>") // it will show index no of array
+
+        function findIndex(findOne) { // when condition is true it will show
+            return findOne >= 20 //imdiate value 
+
+        }
+
+        var bca = [10, 20, 55, 76, 745, 755, 57588, 4737]
+        document.write(bca + "<br>")
+        var ccna = bca.filter(annasaheb) //filter is use for when your condition is true
+        document.write(ccna + "<br>") //that will display those containt
+
+        function annasaheb(age) {
+            return age >= 200
+        }
+
+        var pp = [1020, 39830, 983, 390, 83333]
+        document.write(pp + "<br>")
+        var ddp = pp.filter(filterOne) // and it will create 2nd new array
+        document.write(ddp + "<br>") // when condtion is true it showing currect value
+
+        function filterOne(ageOne) {
+            return ageOne <= 1020
+
+        }
+
+        var ddd = ["rushi", "sanket", "samarth", "vaibhav", "yogesh"]
+        document.write(ddd + "<br>")
+        document.write(ddd + "<br>");
+        ddd.forEach(function(value, index) {
+            document.write(value + ":" + index + "<br>")
+
+        }); // it's forEach method its use for array show in line by line
+
+        var ppp = ["rushi", "sanket", "vishal", "dada", "omkar"]
+        document.write(ppp + "<br>")
+        var ddppt = ppp.forEach(function(rushi, index) {
+            document.write(index + ":" + rushi + "<br>");
+        }); // its forEach funaction its use for array show inline by line
+
+
+        var rdking = ["java", "php", "js", "html", "css"]
+        document.write(rdking + "<br>")
+        var dddppt = rdking.forEach(function(rushikesh, index) {
+            document.write(index + " " + rushikesh + "<br>");
+        }); // this is forEach method
+    </script>
+</body>
+
+</html>
