@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = {
+            fName: 'Rushi',
+            lName: 'Divate',
+            agee: 211,
+            email: 'rushidivate2018@gmail.com',
+            addresss: 'Sangamner',
+            favriteCrickter: ["virat", "dhoni", "hardik"],
+            salary: function() {
+                return 25000;
+            },
+
+            firstName: function() {
+                return 'rushikesh';
+            },
+
+            lastName: function() {
+                return 'divate';
+            },
+
+            age: function() {
+                return 21;
+            }, //this is use for 
+
+            collageName: function() {
+                return 'Sangamner Collage Sangamner'
+            },
+
+            address: function() {
+                return 'Nashik-Pune Highway'
+            },
+            UserName: function() {
+                return 'User Name-  Rushi Divate';
+            },
+
+            Password: function() {
+                return 'Password- **********'
+            },
+
+            about: function() {
+                return 'call me'
+            },
+
+            ContactUs: function() {
+                return 'Just send us your questions or concerns by starting a new case and we will give you the help you need. '
+            },
+
+            MobileNo: function() {
+                return 8983195966
+            },
+
+            BankDetails: function() {
+                return 'State Bank Of India'
+            },
+
+            living: {
+                'city': 'sangamner',
+                'mobNo': 8983195966,
+                'address': 'sangamner'
+
+            }, //we can add new object in one object
+
+            addressd: {
+                'Near by': 'nahsik-pune high way sangamner',
+                'hospital': 'Kashibai Nawale hospital',
+
+            },
+
+
+            fullNamee: function() {
+                return this.fName + " " + this.lName
+
+            },
+
+            addressEmail: function() {
+                    return this.email + " And Address " + this.addresss
+
+                } //this is a keyword when you use 2 object in one main object
+                //then you have yo access you should take this keyword
+                //then it will run
+
+
+        }
+        console.log(a) //this is called object
+        document.write(a.fName + " ") //a is the owner of all object
+        document.write(a.lName + "<br>")
+        document.write(a.agee + "<br>")
+        document.write(a.email + "<br>")
+        document.write(a.addresss + "<br>")
+        document.write(a.favriteCrickter + "<br>")
+        console.log(a.favriteCrickter + "<br>")
+        document.write(a.salary() + "<br>") //function return type is imp when you write function
+        document.write(a.firstName() + "<br>");
+        document.write(a.lastName() + "<br>");
+        document.write(a.age() + "<br>");
+        document.write(a.collageName() + "<br>")
+        document.write(a.address() + "<br>")
+        document.write(a.UserName() + "<br>")
+        document.write(a.Password() + "<br>")
+        document.write(a.about() + "<br>");
+        document.write(a.ContactUs() + "<br>")
+        document.write(a.MobileNo() + "<br>")
+        document.write(a.BankDetails() + "<br>")
+        document.write(a.living.city + "<br>")
+        document.write(a.addressd.hospital + "<br>")
+        document.write(a.fullNamee() + "<br>")
+        document.write(a.addressEmail() + "<br>")
+    </script>
+
+
+</body>
+
+</html>
+
+</html>
