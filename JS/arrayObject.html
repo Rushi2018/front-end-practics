@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var student = [{
+        //         name: 'rushi',
+        //         bg: 'BCA',
+        //         address: 'Sangamner',
+        //         mobNo: 8983195966,
+        //     }, {
+        //         name: 'sanket',
+        //         bg: 'BE',
+        //         address: 'Pune',
+        //         mobNo: 728383809
+        //     }, {
+        //         name: 'shubham',
+        //         bg: 'BA',
+        //         address: 'Malad',
+        //         mobNo: 8983195966,
+        //     },
+
+
+
+        // ]
+
+        // function funOne(stu) {
+        //     // console.log(student.name);
+        //     document.write(stu.name + " " + stu.address + " < br > ");
+
+        // }
+        // //document.write(student.funOne());
+        // //  document.write(student.name);
+        // for (a = 0; a < 3; a++) {
+        //     funOne(student[a])
+        //         // document.write(student[a].name + " " + student[a].bg + " " + student[a].address + " " + student[a].mobNo + "<br>");
+        // }
+
+
+        // var student = [{
+        //         Language: 'HTML',
+        //         student: 'Rushikesh',
+        //         batch: 2.30
+
+        //     }, {
+
+        //         Language: 'CSS',
+        //         student: 'samath',
+        //         batch: 4
+        //     }, {
+        //         Language: 'JAVASCRIPT',
+        //         student: 'sanket',
+        //         batch: 10.30
+        //     },
+        //     //when you have more object array
+        //     //you should use the for loop array
+
+        // ]
+
+        // for (a = 0; a < 3; a++) {
+        //     document.write(student[a].student + " " + student[a].batch + "-" + "<br>")
+        // }
+
+        //concept of you can chnage the value of const\\
+
+        const abc = [{
+
+            name: 'rushikesh',
+            education: 'bca',
+            address: 'sangamner',
+
+        }]
+        abc.name = 'dada'
+        abc.education = 'ba'
+        abc.addressp = 'pune'
+        document.write(abc)
+
+        const bb = ['html', 'css', 'javasript']
+        bb[0] = 'HyperText markup language'
+        bb[1] = 'cascadic style sheet'
+        bb[2] = 'js'
+        document.write(bb + "<br>")
+
+        const cc = [firstName = 'Rushi', lastName = 'Divate', age = 21]
+        cc[0] = 'RUSHO'; //when you use const you can change value in array
+        cc[1] = 'India' //in this stpes you can see
+        cc[2] = 21 // this value is in single array
+        document.write(cc + "<br>")
+
+        const dd = [{
+                name: 'BMW',
+                company: 'germany',
+                since: 1956
+            }, {
+                name1: 'oodi',
+                company1: 'american',
+                since1: 1978
+            }, {
+                name2: 'maruti suzuki ',
+                company2: 'india',
+                since2: 1987
+
+            }
+
+        ]
+        dd.name = 'rushi' //this is second stpe of change the value in const
+        dd.company = 'Honda' // you can change the value of const of array
+        dd.since = 1999
+        document.write(dd.name + " " + dd.company + " " + dd.since + "<br>")
+
+        dd.name1 = 'rollsroyal' //this is the stpes of chnage the value of const
+        dd.company1 = 'indian'
+        dd.since = 2000
+        document.write(dd.name1 + " " + dd.company1 + " " + dd.since1 + "<br>")
+
+        dd.name2 = 'mercedies'
+        dd.company2 = 'shri lanka'
+        dd.since = 2000
+        document.write(dd.name2 + " " + dd.company2 + " " + dd.since2 + "<br>")
+
+
+        var forLoop = {
+            firstName: 'rushi',
+            lastName: 'Divate',
+            Age: 21,
+            education: 'bca'
+        }
+        for (var key in forLoop)
+            document.write(key + ":" + forLoop[key] + "<br>")
+
+        var showData = {
+            Bike: 'honda',
+            owner: 'Divate',
+            bikeNo: 1832
+        }
+        for (var show in showData) {
+            document.write(show + ":" + " " + showData[show] + "<br>")
+        } //this is for in loop we can use for show Data sepretly
+    </script>
+
+
+</body>
+
+</html>
