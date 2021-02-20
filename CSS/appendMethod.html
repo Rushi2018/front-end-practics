@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var div = document.createElement("div")
+        document.body.append(div)
+        var input = document.createElement("input")
+        var button = document.createElement("button")
+        document.body.append(input)
+        button.innerHTML = "add"
+        document.body.append(button)
+        var p = document.createElement("p")
+        document.body.append(p)
+        div.appendChild(p)
+        p.innerHTML = "hello rushi"
+        var label = document.createElement("label")
+        document.body.append(label)
+    </script>
+</body>
+
+</html>
