@@ -77,10 +77,103 @@
 
         var vc = 'trim method'
         var kc = vc.trim() //basically trim is use for cut the space between
-        alert(kc) //word left side to right side
+        document.write(kc + "<br>") //word left side to right side
+
+        //lec 57 string method part 2
+        var pkl = 'hello rushi'
+        var okl = pkl.charAt(9) // charAt is use for showing the postion of word
+        document.write(okl + "<br>") //position is start from 0 index
+
+        var bottol = 'milton is the top bottle company'
+        var nobottol = bottol.charAt(20) // is use for show the position of words
+        document.write(nobottol + "<br>") //when you enter invalid number it's showing me blank page on our page
+
+        var abcd = 'hello rushi'
+        var xyz = abcd.includes('hello') //inclues is use for search words
+        document.write(xyz + "<br>")
+
+        var hjk = 'hello' //charCodeAt it's use for showing the ascii
+        var bbk = hjk.charCodeAt(1) //value of charecter
+        document.write(bbk + "<br>") //here 1 is e, an e ascii code is 104 o/p:-104
+
+        var ppl = String.fromCharCode(101) //its showing me 101 ascii code
+        document.write(ppl + "<br>") //101 is use for small n charecter
+
+        var pkll = String.fromCharCode(65) //its showing me 65 ascii code
+        document.write(pkll + "<br>") // 65 is capital A
+
+        var str = 'hello rushi'
+        var str2 = 'hello rd' //its use for concat many string in one string
+        var str3 = str.concat(" " + str2 + " ", str3 + "") //concat is the method which is use for concate the string
+        document.write(str3 + "<br>") //then display it
+
+        var hp = 'hello'
+        var php = 'RD'
+        var r = hp.concat(" " + php) //concat method is use for uppend the 2 and more string
+        document.write(r + " " + "<br>")
+
+        var bbll = 'hello rushi'
+        var ppll = 'kesh'
+        var ddl = bbll.concat(ppll + "<br>")
+        document.write(ddl + "<br>") //concate method is use to concate string
+
+        var split = 'its use for remove the space between charecter'
+        var dosplit = split.split(" ") //in that coatation its remove the space and space is remove then
+        document.write(dosplit + "<br>") //its showing me comma when i enter in that split mmethod it's remove all i then showing me comma for i
+
+        var bhau = 'hello javascript is super language'
+        var rushi = bhau.split('j') // j is remove from string and they are showing me comma
+        document.write(rushi + "<br>") //split is removing the space
+
+        var repeatMethod = 'hello rushi divate '
+        var n = repeatMethod.repeat(10) //repeat method repeat the string how many you have write
+        document.write(n) //repeat is use for repeat the string
+
+        var hhl = 'Hello Rushi D'
+        var nnn = hhl.repeat(20) //how much you have want to write
+        document.write(nnn + "<br>") //use only repeat method for reapeting string
+
+        var slice = 'hello rushi divate'
+        var noslice = slice.slice(2) //if you want to do not write first 2 words then you can use the slice method
+        document.write(noslice + "<br>") //when you write -1 it will showing me from back side of string ex -2 (te)
+
+        var rdpp = 'hello rushikesh'
+        var spdp = rdpp.slice(1) //slice is use for cut the element     
+        document.write(spdp)
+
+        var toString = 50
+        var noString = 'd'
+        var toSString = noString.toString() //toString is method of it use for convert all element into string
+        document.write(toSString) //its use for it's convert all element into string
+
+
+        var num = '20'
+        var numOne = Number(num) //20 is string but when you use the number it
+        document.write(numOne) //will displaying into number
+
+        var kk = '20'
+        var nok = parseInt(kk) //parse int is only show the actual value it dont show dotted value
+        document.write(nok) //its only show first value
+
+        var rddd = '20.30'
+        var showThe = parseFloat(rddd) //value give in coatation
+        document.write(showThe) //parseFloat is showing the value in dot ex 10.20
+
+        var isinite = 100;
+        var ddpl = Number.isFinite(isinite) // every is method is only return the true or false value
+        document.write(ddpl) //infinite is only checking the number value
+
+        var interger = 100;
+        var nope = Number.isInteger(interger) //this is also is method it will also return the true or false value
+        document.write(nope) //when you use number method you want to write number.method name
     </script>
 
 
+
+
+
 </body>
+
+</html>
 
 </html>
